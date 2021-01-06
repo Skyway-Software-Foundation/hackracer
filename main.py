@@ -29,9 +29,9 @@ import tkinter as tk
 import socket
 import json
 
-top = Tkinter.Tk()
+top = tkinter.Tk()
 
-button = Tkinter.Button(middle, text="Play!", bg="#333FFF", activebackground="#333EFF")
+button = tkinter.Button(middle, text="Play!", bg="#333FFF", activebackground="#333EFF")
 
 button.pack()
 top.mainloop()
