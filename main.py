@@ -27,3 +27,4 @@ SOFTWARE.
 #import necessary dependencies
 import tkinter as tk
 import socket
+import json
