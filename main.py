@@ -31,7 +31,7 @@ import json
 
 top = tkinter.Tk()
 
-button = tkinter.Button(middle, text="Play!", bg="#333FFF", activebackground="#333EFF")
+button = tkinter.Button(text="Play!", bg="#333FFF", activebackground="#333EFF")
 
 button.pack()
 top.mainloop()
