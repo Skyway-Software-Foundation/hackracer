@@ -27,7 +27,7 @@ SOFTWARE.
 #import necessary dependencies
 import tkinter as tk
 import socket
-<<<<<<< HEAD
+import json
 
 top = Tkinter.Tk()
 
@@ -35,6 +35,3 @@ button = Tkinter.Button(middle, text="Play!", bg="#333FFF", activebackground="#3
 
 button.pack()
 top.mainloop()
-=======
-import json
->>>>>>> 0f98562b377abf21e12893af1b9e9d31e3d2bdc4
