@@ -27,3 +27,10 @@ SOFTWARE.
 #import necessary dependencies
 import tkinter as tk
 import socket
+
+top = Tkinter.Tk()
+
+button = Tkinter.Button(middle, text="Play!", bg="#333FFF", activebackground="#333EFF")
+
+button.pack()
+top.mainloop()
