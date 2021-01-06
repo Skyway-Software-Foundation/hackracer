@@ -25,7 +25,7 @@ SOFTWARE.
 """
 
 #import necessary dependencies
-import tkinter as tk
+import tkinter
 import socket
 import json
 
