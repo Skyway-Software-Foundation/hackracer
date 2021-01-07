@@ -26,6 +26,7 @@ SOFTWARE.
 
 #import necessary dependencies
 import tkinter
+from tkinter import messagebox
 import socket
 import json
 
@@ -33,7 +34,7 @@ top = tkinter.Tk()
 
 def function_name():
     #What do you want the button to do
-    tkMessageBox.showinfo("idk", "idek")
+    messagebox.showinfo("idk", "idek")
 button = tkinter.Button(text="Play!", bg="#333FFF", bd=5, command = function_name, activebackground="#333EFF")
 button.place(relx=0.5, rely=0.5, anchor=tkinter.CENTER)
 top.mainloop()
