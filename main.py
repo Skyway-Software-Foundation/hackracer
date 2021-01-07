@@ -31,6 +31,9 @@ import json
 
 top = tkinter.Tk()
 
-button = tkinter.Button(text="Play!", bg="#333FFF", bd=5, activebackground="#333EFF")
+def function_name():
+    #What do you want the button to do
+    tkMessageBox.showinfo("idk", "idek")
+button = tkinter.Button(text="Play!", bg="#333FFF", bd=5, command = function_name, activebackground="#333EFF")
 button.place(relx=0.5, rely=0.5, anchor=tkinter.CENTER)
 top.mainloop()
