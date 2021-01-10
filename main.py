@@ -26,15 +26,43 @@ SOFTWARE.
 
 #import necessary dependencies
 import tkinter
+from tkinter import *
+from tkinter import ttk
 from tkinter import messagebox
 import socket
 import json
 
-top = tkinter.Tk()
+def enterName():
+    fahrenheit = playerName.get()
+    print(fahrenheit)
 
-def function_name():
-    #What do you want the button to do
-    messagebox.showinfo("ERROR", "Can't open program because no.")
-button = tkinter.Button(text="Play!", bg="#333FFF", bd=5, command = function_name, activebackground="#333EFF")
-button.place(relx=0.5, rely=0.5, anchor=tkinter.CENTER)
-top.mainloop()
+# Set-up the window
+window = tkinter.Tk()
+window.title("HackRacer")
+window.resizable(width=True, height=True)
+
+
+###############################
+#Lobby
+###############################
+frm_entry = tkinter.Frame(master=window)
+lbl_temp = tkinter.Label(master=frm_entry, text="Enter Player Name: ")
+playerName = tkinter.Entry(master=frm_entry, width=10)
+btn_convert = tkinter.Button(
+    master=frm_entry,
+    text="Play!",
+    command=enterName
+)
+#Grid Lobby
+playerName.grid(row=0, column=1, sticky="e")
+lbl_temp.grid(row=0, column=0, sticky="w")
+btn_convert.grid(row=1, column=0, pady=10)
+#Format Lobby entry
+frm_entry.place(relx=0.5, rely=0.5, anchor=tkinter.CENTER)
+
+
+
+
+
+# Run the application
+window.mainloop()
